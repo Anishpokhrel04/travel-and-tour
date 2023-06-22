@@ -1,0 +1,100 @@
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.home{
+  height: 70vh;
+  background: url(../../assets/img1.jpg);
+  background-position:center ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .title{
+    text-align: center;
+    color: var(--whiteColor);
+    h1{
+      color: var(--whiteColor);
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .subTitle{
+      color: var(--whiteColor);
+      text-align: center;
+      font-size: 13px;
+      font-weight: 300;
+      opacity: .9rem;
+      max-width: 70%;
+      padding: 1rem 0;
+      margin: auto;
+    }
+  }
+
+  .card{
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+    padding: 2rem;
+    background: var(--whiteColor);
+    position: absolute;
+    gap: 1rem;
+    justify-content: stretch;
+    bottom: -20%;
+    // transform: translate(-50%);
+    // left: 50%;
+    box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.45);
+    
+
+    .distDiv, .locationDiv, .priceDiv{
+      display: grid;
+      color:var(--textColor) ;
+      justify-content: stretch;
+
+      label{
+       display: block;
+      font-weight: 500;
+      font-size: 13px;
+      padding-bottom: 0.4rem;
+      }
+      input{
+      width: 100%;
+      background: var(--inputColor);
+      border: none;
+      border-radius: 10px;
+      padding: 5px;
+      font-weight: 500;
+
+      &::placeholder{
+        font-size: 13px;
+        opacity: 0.5;
+        font-weight: 400;
+      }
+      &:focus{
+        outline: none;
+      }
+      }
+    }
+.btns{
+  padding: 0rem 5rem ;
+  font-weight: 600;
+  background: var(--PrimaryColor);
+  border: none;
+  border-radius: 3rem;
+  color: var(--whiteColor);
+
+  &:hover{
+    background: var(--HoverColor);
+  }
+}
+   
+  }
+}
